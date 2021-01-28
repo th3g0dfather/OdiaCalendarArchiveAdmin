@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1054760903911",
+    "project_id": "odia-calendar-archive-admin",
+    "storage_bucket": "odia-calendar-archive-admin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054760903911:android:8e19f2da5471ba0ebfee42",
+        "android_client_info": {
+          "package_name": "com.debasish.odiacalendararchiveadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054760903911-n8svq5li7viipv94p42fml9u57pn0mbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX6_NHDG_BWYdkwrIzb21a7TPrPpsKsXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054760903911-n8svq5li7viipv94p42fml9u57pn0mbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

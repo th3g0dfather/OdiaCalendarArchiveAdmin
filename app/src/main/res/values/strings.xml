@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Odia Calendar Archive Admin</string>
+    <string name="choose_file">Choose File</string>
+    <string name="upload">Upload</string>
+    <string name="show_uploads">Show Uploads</string>
+    <string name="enter_month">Enter Month</string>
+    <string name="enter_year">Enter Year</string>
+    <string name="select_year">Select Year:</string>
+    <string name="filename">Filename: %s</string>
+    <string name="month">Month: %s</string>
+    <string name="year">Year: %s</string>
+    <string name="properties">Properties:</string>
+    <string name="enter_pin">Enter Pin</string>
+    <string name="submit">Submit</string>
+    <string name="change_pin">Change Pin</string>
+    <string name="enter_new_pin">Enter New Pin</string>
+    <string name="confirm_new_pin">Confirm New Pin</string>
+
+    <string-array name="month">
+        <item>Select Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>
