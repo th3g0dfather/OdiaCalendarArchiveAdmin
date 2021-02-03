@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                 @Override
                                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                                    //wait before resetting the progressbar back to 0
+                                    //wait 1 sec before resetting the progressbar back to 0
                                     Handler handler = new Handler();
                                     handler.postDelayed(new Runnable() {
                                         @Override

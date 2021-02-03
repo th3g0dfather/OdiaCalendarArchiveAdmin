@@ -157,6 +157,12 @@ public class ImagesActivity extends AppCompatActivity implements ImageAdapter.On
     }
 
     @Override
+    public void onEditClick(int position) {
+        Intent intent = new Intent(this, EditActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
     public void onDeleteClick(int position) {
         selectedItem = uploads.get(position);
         String selectedKey = selectedItem.getKey();     //get key of the selected item

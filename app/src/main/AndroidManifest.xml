@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OdiaCalendarArchiveAdmin">
-        <activity android:name=".ChangePinActivity"></activity>
+        <activity android:name=".EditActivity"></activity>
+        <activity android:name=".ChangePinActivity" />
         <activity android:name=".PinActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ImagesActivity" />
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

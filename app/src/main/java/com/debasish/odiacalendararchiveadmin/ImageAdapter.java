@@ -66,6 +66,8 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
     public interface OnItemClickListener {
         void onShowDetails(int position);
 
+        void onEditClick(int position);
+
         void onDeleteClick(int position);
     }
 
@@ -88,9 +90,11 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
             menu.setHeaderTitle("Select Action");
             MenuItem showDetails = menu.add(Menu.NONE, 1, 1, "Show Details");
-            MenuItem delete = menu.add(Menu.NONE, 2, 2, "Delete");
+            MenuItem edit = menu.add(Menu.NONE, 2, 2, "Edit");
+            MenuItem delete = menu.add(Menu.NONE, 3, 3, "Delete");
 
             showDetails.setOnMenuItemClickListener(this);
+            edit.setOnMenuItemClickListener(this);
             delete.setOnMenuItemClickListener(this);
         }
 
@@ -105,6 +109,9 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
                             listener.onShowDetails(position);
                             return true;
                         case 2:
+                            listener.onEditClick(position);
+                            return true;
+                        case 3:
                             listener.onDeleteClick(position);
                             return true;
                     }

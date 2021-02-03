@@ -10,12 +10,11 @@
     <ImageView
         android:id="@+id/attach_file"
         android:layout_width="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/button_choose_image"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@id/button_choose_image"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:srcCompat="@drawable/ic_baseline_attach_file_24"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintTop_toTopOf="@id/button_choose_image"
+        app:srcCompat="@drawable/ic_baseline_attach_file_24" />
 
     <Button
         android:id="@+id/button_choose_image"
@@ -29,27 +28,28 @@
     <ImageView
         android:id="@+id/select_date"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/spinner_month"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/spinner_month"
-        app:srcCompat="@drawable/ic_baseline_calendar_today_24"
-        app:layout_constraintBottom_toBottomOf="@id/spinner_month"
-        android:layout_height="wrap_content"/>
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
     <Spinner
         android:id="@+id/spinner_month"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:entries="@array/month"
-        app:layout_constraintTop_toTopOf="@id/edit_text_layout_year"
         app:layout_constraintBottom_toBottomOf="@id/edit_text_layout_year"
-        app:layout_constraintStart_toEndOf="@id/select_date"/>
+        app:layout_constraintStart_toEndOf="@id/select_date"
+        app:layout_constraintTop_toTopOf="@id/edit_text_layout_year" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_text_layout_year"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/spinner_month"
         app:layout_constraintTop_toBottomOf="@id/button_choose_image">
@@ -57,9 +57,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_year"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:hint="@string/enter_year"
-            android:inputType="number"
-            android:layout_height="match_parent"/>
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView

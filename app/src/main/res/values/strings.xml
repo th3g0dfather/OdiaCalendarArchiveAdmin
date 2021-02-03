@@ -15,6 +15,7 @@
     <string name="change_pin">Change Pin</string>
     <string name="enter_new_pin">Enter New Pin</string>
     <string name="confirm_new_pin">Confirm New Pin</string>
+    <string name="change">Change</string>
 
     <string-array name="month">
         <item>Select Month</item>
