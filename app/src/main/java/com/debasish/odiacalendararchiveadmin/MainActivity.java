@@ -105,28 +105,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.getChildrenCount() > 0 ) {     //if children count is 0 no data is present in the database
-                    for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-                        String yearKey = postSnapshot.getKey();
-                        listYear.add(yearKey.substring(0, 4)); //save the first 4 letters of the month
-                    }
-                    Collections.sort(listYear, Collections.reverseOrder()); //sort the list with in reverse order
-                    //if data is present goto ImagesActivity
-                    textViewShowUploads.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            openImagesActivity();
-                        }
-                    });
-                } else {
-                    //when no data is in database show error toast
-                    textViewShowUploads.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Toast.makeText(MainActivity.this, "No data to show", Toast.LENGTH_SHORT).show();
-                        }
-                    });
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                    String yearKey = postSnapshot.getKey();
+                    listYear.add(yearKey.substring(0, 4)); //save the first 4 letters of the month
                 }
+                Collections.sort(listYear, Collections.reverseOrder()); //sort the list with in reverse order
+                //if data is present goto ImagesActivity
+                textViewShowUploads.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openImagesActivity();
+                    }
+                });
             }
 
             @Override
